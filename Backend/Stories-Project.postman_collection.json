@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "6c5ee0b3-bfb3-44d1-8774-7496b6a6a4cb",
+		"name": "Stories-Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33042955"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "forget-password",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "reset-password",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "uploadStory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MTIyMGU5ODhhMTkwZTE1YWRjMDNmMSIsImlhdCI6MTc2Mjc5NTc1MywiZXhwIjoxNzYyNzk5MzUzfQ.mHZ2G9M1VdD4AJ6bTlfU-p8Iy4-j86J_am7-NDNnTiU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"alaa@gmail.com\",\r\n  \"password\":\"Alaa__Gamal@2002\"\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/stories/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"stories",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserStories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/stories/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stories",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewStory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/stories/693c79191175a317ce41a9c0/view",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stories",
+						"693c79191175a317ce41a9c0",
+						"view"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Feed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/stories/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stories",
+						"feed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
